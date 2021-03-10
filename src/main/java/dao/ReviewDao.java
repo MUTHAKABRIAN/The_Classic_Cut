@@ -1,20 +1,18 @@
 package dao;
 
+import models.Review;
 import java.util.List;
 
-public interface ReviewsDao {
-    // create //
+public interface ReviewDao {
     void add(Review review);
 
-    // read //
     List<Review> getAll();
-    List<Review> getAllReviewsByRestaurantId(int restaurantId);
 
-    // update //
+    List<Review> getAllReviewsByBarberShopId(int barberShopId);
 
-    // delete //
     void deleteById(int id);
+
     void clearAll();
 
-    List<Review> getAllReviewsByRestaurantSortedNewestToOldest(int restaurantId);
+    List<Review> getAllReviewsByBarberShopSortedNewestToOldest(int restaurantId);
 }
