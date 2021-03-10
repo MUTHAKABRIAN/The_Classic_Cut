@@ -1,4 +1,4 @@
 package models;
 
-public class Hairstyles {
+public class Hairstyle {
 }

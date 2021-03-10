@@ -1,4 +1,4 @@
 package models;
 
-public class Reviews {
+public class Review {
 }

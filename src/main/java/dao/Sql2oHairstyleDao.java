@@ -1,4 +1,4 @@
 package dao;
 
-public class Sql2oHairstylesDao {
+public class Sql2oHairstyleDao {
 }
