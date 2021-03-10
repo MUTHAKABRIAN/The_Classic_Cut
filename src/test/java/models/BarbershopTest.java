@@ -17,25 +17,25 @@ public class BarbershopTest {
 
     @Test
     public void Barbershop_isAnInstanceOfBarbershop() {
-        Barbershop testBarbershop = setUpNewBarbershop();
+        Barbershop testBarbershop = setUpNewBarberShop();
         assertTrue(testBarbershop instanceof Barbershop);
     }
 
     @Test
     public void BarbershopNameInstantiatesCorrectly() {
-        Barbershop testBarbershop = setUpNewBarbershop();
+        Barbershop testBarbershop = setUpNewBarberShop();
         assertEquals("Classic Cut", testBarbershop.getName());
     }
 
     @Test
     public void BarbershopAddressInstantiatesCorrectly() {
-        Barbershop testBarbershop = setUpNewBarbershop();
+        Barbershop testBarbershop = setUpNewBarberShop();
         assertEquals("111-111-111 Ngong Street", testBarbershop.getAddress());
     }
 
     @Test
     public void BarbershopPhoneInstantiatesCorrectly() {
-        Barbershop testBarbershop = setUpNewBarbershop();
+        Barbershop testBarbershop = setUpNewBarberShop();
         assertEquals("+02025456662", testBarbershop.getPhone());
     }
 
