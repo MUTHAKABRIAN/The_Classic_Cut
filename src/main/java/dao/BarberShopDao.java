@@ -5,7 +5,7 @@ import models.HairStyle;
 
 import java.util.List;
 
-public interface BarbershopDao {
+public interface BarberShopDao {
     List<BarberShop> getAll();
 
     List<HairStyle> getAllHairStylesForABarberShop(int barberShopId);
