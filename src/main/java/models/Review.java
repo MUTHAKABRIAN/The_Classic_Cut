@@ -86,11 +86,14 @@ public class Review {
     }
 
     public void setCreatedAt(long createdAt) {
-        this.createdAt = createdAt;
+        this.createdAt = System.currentTimeMillis();
     }
 
-    public String getFormattedCreatedAt() {
-        return formattedCreatedAt;
+    public String getFormattedCreatedAt(){
+        Date date = new Date(createdAt);
+        String datePatternToUse = "MM/dd/yyyy @ K:mm a";
+        SimpleDateFormat sdf = new SimpleDateFormat(datePatternToUse);
+        return sdf.format(date);
     }
 
     public void setFormattedCreatedAt() {
