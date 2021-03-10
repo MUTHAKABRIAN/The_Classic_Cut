@@ -1,20 +1,20 @@
 package dao;
 
-import models.Barbershop;
-import models.Hairstyle;
+import models.BarberShop;
+import models.HairStyle;
 
 import java.util.List;
 
 public interface BarbershopDao {
-    List<Barbershop> getAll();
+    List<BarberShop> getAll();
 
-    List<Hairstyle> getAllHairStylesForABarberShop(int barberShopId);
+    List<HairStyle> getAllHairStylesForABarberShop(int barberShopId);
 
-    Barbershop findById(int id);
+    BarberShop findById(int id);
 
-    void add(Barbershop barbershop);
+    void add(BarberShop barbershop);
 
-    void addBarberShopToHairStyle(Barbershop barbershop, Hairstyle hairstyle);
+    void addBarberShopToHairStyle(BarberShop barbershop, HairStyle hairstyle);
 
     void update(int id, String name, String address, String phone, String website, String email);
 

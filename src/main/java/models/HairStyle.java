@@ -2,12 +2,12 @@ package models;
 
 import java.util.Objects;
 
-public class Hairstyle {
+public class HairStyle {
     private String name;
     private int id;
 
 
-    public Hairstyle(String name) {
+    public HairStyle(String name) {
         this.name = name;
     }
 
@@ -15,7 +15,7 @@ public class Hairstyle {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Hairstyle hairstyle = (Hairstyle) o;
+        HairStyle hairstyle = (HairStyle) o;
         return id == hairstyle.id &&
                 Objects.equals(name, hairstyle.name);
     }
