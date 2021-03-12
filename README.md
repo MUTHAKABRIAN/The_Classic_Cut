@@ -1,5 +1,5 @@
 # The_Classic_Cut
-![Example screenshot]()
+![Example screenshot](https://github.com/MUTHAKABRIAN/The_Classic_Cut/blob/master/src/main/resources/public/images/homepage.png?raw=true)
 
 ## Group Project
 * Muthaka Brian.
