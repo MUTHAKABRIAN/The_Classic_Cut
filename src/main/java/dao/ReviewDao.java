@@ -5,16 +5,16 @@ import models.Review;
 import java.util.List;
 
 public interface ReviewDao {
-    void add(Review review);
+  void add(Review review);
 
-    List<Review> getAll();
+  List<Review> getAll();
 
-    List<Review> getAllReviewsByBarberShopId(int barberShopId);
+  List<Review> getAllReviewsByBarberShopId(int barberShopId);
 
-    void deleteById(int id);
+  void deleteById(int id);
 
-    void clearAll();
+  void clearAll();
 
-    List<Review> getAllReviewsByBarberShopSortedNewestToOldest(int restaurantId);
+  List<Review> getAllReviewsByBarberShopSortedNewestToOldest(int restaurantId);
 
 }
