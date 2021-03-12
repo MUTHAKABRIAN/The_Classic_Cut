@@ -1,5 +1,6 @@
 package models;
 
+
 import java.util.Objects;
 
 public class BarberShop {
@@ -74,4 +75,5 @@ public class BarberShop {
     public void setEmail(String email) {
         this.email = email;
     }
+
 }

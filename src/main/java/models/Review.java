@@ -1,5 +1,6 @@
 package models;
 
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Objects;
@@ -102,4 +103,5 @@ public class Review {
         SimpleDateFormat sdf = new SimpleDateFormat(datePattern);
         this.formattedCreatedAt = sdf.format(date);
     }
+
 }

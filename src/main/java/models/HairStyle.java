@@ -1,5 +1,6 @@
 package models;
 
+
 import java.util.Objects;
 
 public class HairStyle {
@@ -41,3 +42,4 @@ public class HairStyle {
         this.id = id;
     }
 }
+

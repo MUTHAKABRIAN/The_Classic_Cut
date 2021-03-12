@@ -1,5 +1,6 @@
 package dao;
 
+
 import models.Review;
 import java.util.List;
 
@@ -15,4 +16,5 @@ public interface ReviewDao {
     void clearAll();
 
     List<Review> getAllReviewsByBarberShopSortedNewestToOldest(int restaurantId);
+
 }
