@@ -10,6 +10,7 @@ public class BarberShop {
     private String website;
     private String email;
     private int id;
+    private String hairstyleName;
 
     public BarberShop(String name, String address, String phone, String website, String email) {
         this.name = name;
@@ -17,6 +18,7 @@ public class BarberShop {
         this.phone = phone;
         this.website = website;
         this.email = email;
+
     }
 
     @Override
@@ -73,7 +75,21 @@ public class BarberShop {
     }
 
     public void setEmail(String email) {
+
         this.email = email;
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+
+        this.id = id;
+    }
+    public String getHairstyleName() {
+        return hairstyleName;
+    }
+
 
 }

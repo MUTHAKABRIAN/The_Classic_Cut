@@ -8,7 +8,7 @@ import java.util.List;
 public interface HairstyleDao {
     List<HairStyle> getAll();
 
-    List<BarberShop> getAllBarberShopForHairStyle(int id);
+    List<HairStyle> getAllHairStyleByBarbershop(int barbershopId);
 
     void add(HairStyle hairstyle);
 
