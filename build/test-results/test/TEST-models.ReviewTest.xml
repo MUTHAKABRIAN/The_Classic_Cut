@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="models.ReviewTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2021-03-10T07:37:22" hostname="tech-night" time="0.065">
+  <properties/>
+  <testcase name="ReviewsRatingInstantiatesCorrectly" classname="models.ReviewTest" time="0.06"/>
+  <testcase name="ReturnsTrueIfReviewsAreTheSame" classname="models.ReviewTest" time="0.001"/>
+  <testcase name="ReviewsContentInstantiatesCorrectly" classname="models.ReviewTest" time="0.001"/>
+  <testcase name="BarbershopIdInstantiatesCorrectly" classname="models.ReviewTest" time="0.001"/>
+  <testcase name="ReviewIsAnInstanceOfReview_true" classname="models.ReviewTest" time="0.0"/>
+  <testcase name="ReviewsWrittenByInstantiatesCorrectly" classname="models.ReviewTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
