@@ -55,7 +55,7 @@ public class Sql2oBarberShopDao implements BarbershopDao {
 
   @Override
   public BarberShop findById(int id) {
-    String sql ="SELECT * FROM barbershop WHERE id =:id";
+    String sql ="SELECT * FROM barbershops WHERE id =:id";
     try (Connection conn = sql2o.open()){
       return conn.createQuery(sql)
         .addParameter("id",id)

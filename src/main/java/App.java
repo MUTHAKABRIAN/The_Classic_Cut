@@ -28,7 +28,7 @@ public class App {
     staticFileLocation("/public");
 
     Sql2oReviewDao ReviewDao;
-    Sql2oHairStyleDao HairstyleDao;
+    Sql2oHairstyleDao HairstyleDao;
     Sql2oBarberShopDao BarberShopDao;
 
     Connection conn;
@@ -42,7 +42,7 @@ public class App {
 
     BarberShopDao = new Sql2oBarberShopDao(sql2o);
     ReviewDao = new Sql2oReviewDao(sql2o);
-    HairstyleDao = new Sql2oHairStyleDao(sql2o);
+    HairstyleDao = new Sql2oHairstyleDao(sql2o);
 
 
     get("/", "application/json", (req, res) ->
@@ -84,7 +84,7 @@ public class App {
       int Bid = Integer.parseInt(req.params("id"));
       BarberShop barbershopToFind = BarberShopDao.findById(Bid);
       if(barbershopToFind == null) {
-        throw new ApiException (404, String.format("No user with the id: \"%s\" exists", req.params("id")));
+        throw new ApiException (404, String.format("No barbershop with the id: \"%s\" exists", req.params("id")));
       }
       return gson.toJson(barbershopToFind);
     });
@@ -113,16 +113,16 @@ public class App {
     });
 
     get("/barbershops/:id/reviews", "application/json", (req, res) -> {
-      int restaurantId = Integer.parseInt(req.params("id"));
+      int barbershopId = Integer.parseInt(req.params("id"));
 
-      BarberShop barberShopToFind = BarberShopDao.findById(restaurantId);
+      BarberShop barberShopToFind = BarberShopDao.findById(barbershopId);
       List<Review> allReviews;
 
       if (barberShopToFind == null){
         throw new ApiException(404, String.format("No barbershop with the id: \"%s\" exists", req.params("id")));
       }
 
-      allReviews = ReviewDao.getAllReviewsByBarberShopId(restaurantId);
+      allReviews = ReviewDao.getAllReviewsByBarberShopId(barbershopId);
 
       return gson.toJson(allReviews);
     });

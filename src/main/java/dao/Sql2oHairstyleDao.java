@@ -9,11 +9,11 @@ import org.sql2o.Sql2oException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Sql2oHairStyleDao implements HairstyleDao {
+public class Sql2oHairstyleDao implements HairstyleDao {
 
   private final Sql2o sql2o;
 
-  public Sql2oHairStyleDao(Sql2o sql2o) {
+  public Sql2oHairstyleDao(Sql2o sql2o) {
     this.sql2o = sql2o;
   }
 
@@ -53,7 +53,7 @@ public class Sql2oHairStyleDao implements HairstyleDao {
 
   @Override
   public void add(HairStyle hairstyle) {
-    String sql = "INSERT INTO ( barbershopId,name  ) VALUES (:barbershopId,:name)";
+    String sql = "INSERT INTO hairstyles( barbershopId, name) VALUES (:barbershopId,:name)";
     try (Connection conn = sql2o.open()) {
       int id = (int) conn.createQuery(sql, true)
         .bind(hairstyle)
