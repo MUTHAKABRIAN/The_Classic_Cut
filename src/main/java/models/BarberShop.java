@@ -1,8 +1,9 @@
 package models;
 
+
 import java.util.Objects;
 
-public class Barbershop {
+public class BarberShop {
     private String name;
     private String address;
     private String phone;
@@ -10,7 +11,7 @@ public class Barbershop {
     private String email;
     private int id;
 
-    public Barbershop(String name, String address, String phone, String website, String email) {
+    public BarberShop(String name, String address, String phone, String website, String email) {
         this.name = name;
         this.address = address;
         this.phone = phone;
@@ -22,7 +23,7 @@ public class Barbershop {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Barbershop that = (Barbershop) o;
+        BarberShop that = (BarberShop) o;
         return Objects.equals(name, that.name) &&
                 Objects.equals(address, that.address) &&
                 Objects.equals(phone, that.phone) &&
@@ -74,4 +75,5 @@ public class Barbershop {
     public void setEmail(String email) {
         this.email = email;
     }
+
 }
