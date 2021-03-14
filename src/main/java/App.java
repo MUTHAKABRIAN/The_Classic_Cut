@@ -34,8 +34,8 @@ public class App {
     Connection conn;
     Gson gson = new Gson();
 
-//        String connectionString = "jdbc:postgresql://ec2-54-159-175-113.compute-1.amazonaws.com:5432/d9bhenh6h6u33v";
-//        Sql2o sql2o = new Sql2o(connectionString, "peymsvmhylrbpk", "54b10385e7dbeee788ce771034e57293897fa9a5266586a56301c9afd24d947f");
+//        String connectionString = "jdbc:postgresql://ec2-54-159-175-113.compute-1.amazonaws.com:5432/d8grc02bjh5thu";
+//        Sql2o sql2o = new Sql2o(connectionString, "avcpobtkxusfwy", "3fca13919bffb8ddee615b4f8980f42b0f84603e8aa69e85ac40a21933e0ddd0");
 
     String connectionString = "jdbc:postgresql://localhost:5432/barber";
     Sql2o sql2o = new Sql2o(connectionString, "moring", "root");
@@ -46,7 +46,7 @@ public class App {
 
 
     get("/", "application/json", (req, res) ->
-      "{\"message\":\"Welcome To Tech Night Barber-Shops Connection\"}");
+      "{\"Note\":\"Welcome To Tech Night Barber-Shops Connection\"}");
 
     post("/barbershops/new", "application/json", (request, response) -> {
       BarberShop barberShop = gson.fromJson(request.body(), BarberShop.class);

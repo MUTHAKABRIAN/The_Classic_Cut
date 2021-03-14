@@ -21,6 +21,6 @@ CREATE TABLE reviews (
  writtenby VARCHAR,
  content VARCHAR,
  rating INTEGER,
- barbershopid INTEGER
+ barbershopId INTEGER
 );
 CREATE DATABASE barber_test WITH TEMPLATE barber;

@@ -9,8 +9,7 @@ public class HairStyle {
   private int barbershopId;
 
 
-  public HairStyle(int id,String name,int barbershopId) {
-    this.id=id;
+  public HairStyle(String name,int barbershopId) {
     this.name = name;
     this.barbershopId=barbershopId;
   }
