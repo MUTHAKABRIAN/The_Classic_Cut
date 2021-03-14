@@ -53,7 +53,7 @@ public class Sql2oHairstyleDao implements HairstyleDao {
 
   @Override
   public void add(HairStyle hairstyle) {
-    String sql = "INSERT INTO hairstyles( barbershopId, name) VALUES (:barbershopId,:name)";
+    String sql = "INSERT INTO hairstyles( barbershopId, name) VALUES (:barberShopId,:name)";
     try (Connection conn = sql2o.open()) {
       int id = (int) conn.createQuery(sql, true)
         .bind(hairstyle)
@@ -67,7 +67,7 @@ public class Sql2oHairstyleDao implements HairstyleDao {
 
   @Override
   public void addHairStyleToBarberShop(HairStyle hairstyle, BarberShop barbershop) {
-    String sql = "INSERT INTO barbershop (hairstyleId,name,address ,phone ,website,email ) VALUES (:hairstyleId,:name,:address ,:phone ,:website,:email)";
+    String sql = "INSERT INTO barbershops (hairstyleId, name) VALUES (:hairstyleId,:name,:address ,:phone ,:website,:email)";
     try (Connection conn = sql2o.open()) {
       conn.createQuery(sql)
         .addParameter("hairstyleId", hairstyle.getId())

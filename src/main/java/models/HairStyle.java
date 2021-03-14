@@ -6,12 +6,12 @@ import java.util.Objects;
 public class HairStyle {
   private String name;
   private int id;
-  private int barbershopId;
+  private int barberShopId;
 
 
-  public HairStyle(String name,int barbershopId) {
+  public HairStyle(String name,int barberShopId) {
     this.name = name;
-    this.barbershopId=barbershopId;
+    this.barberShopId=barberShopId;
   }
 
   @Override
@@ -20,13 +20,13 @@ public class HairStyle {
     if (o == null || getClass() != o.getClass()) return false;
     HairStyle hairStyle = (HairStyle) o;
     return getId() == hairStyle.getId() &&
-      getBarbershopId() == hairStyle.getBarbershopId() &&
+      getbarberShopId() == hairStyle.getbarberShopId() &&
       Objects.equals(getName(), hairStyle.getName());
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(getName(), getId(), getBarbershopId());
+    return Objects.hash(getName(), getId(), getbarberShopId());
   }
 
   public String getName() {
@@ -45,11 +45,11 @@ public class HairStyle {
 
     this.id = id;
   }
-  public int getBarbershopId(){
-    return barbershopId;
+  public int getbarberShopId(){
+    return barberShopId;
   }
-  public void setBarbershopId(){
-    this.barbershopId=barbershopId;
+  public void setbarberShopId(){
+    this.barberShopId=barberShopId;
 
   }
 }
