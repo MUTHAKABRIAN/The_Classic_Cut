@@ -43,11 +43,11 @@
       <artifactId>sql2o</artifactId>
       <version>1.5.4</version>
     </dependency>
-    <dependency>
-      <groupId>com.h2database</groupId>
-      <artifactId>h2</artifactId>
-      <version>1.4.191</version>
-    </dependency>
+<!--    <dependency>-->
+<!--      <groupId>com.h2database</groupId>-->
+<!--      <artifactId>h2</artifactId>-->
+<!--      <version>1.4.191</version>-->
+<!--    </dependency>-->
   </dependencies>
   <build>
     <plugins>
@@ -89,7 +89,7 @@
         <configuration>
           <jdkVersion>1.8</jdkVersion>
           <!-- Change this to YOUR application name! -->
-          <appName>newsorganisationportal</appName>
+          <appName>theclassiccut</appName>
           <processTypes>
             <web>java -jar target/my-app-1.0-jar-with-dependencies.jar</web>
           </processTypes>
